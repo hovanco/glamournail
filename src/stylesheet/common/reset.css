@@ -1,0 +1,81 @@
+/* ===== RESET & BASE STYLES ===== */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HTML & Body */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: var(--font-16);
+}
+
+body {
+  position: relative;
+  color: var(--white);
+  -webkit-tap-highlight-color: transparent;
+  line-height: 1.5;
+  font-family: inherit;
+}
+
+/* Text elements */
+ol, ul {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  color: var(--white);
+  text-decoration: none;
+}
+
+a.btn:visited {
+  color: var(--white);
+}
+
+button {
+  border: none;
+  outline: none;
+  background: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Remove quotes style from blockquote & q */
+blockquote, q {
+  quotes: none;
+}
+
+blockquote::before, blockquote::after,
+q::before, q::after {
+  content: '';
+}
+
+/* HTML5 elements display fix for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+.nextjs-toast {
+  display: none !important;
+}
+
+h1 {
+  font-size: 20px;
+  color: red;
+}
